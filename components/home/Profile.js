@@ -38,9 +38,9 @@ const Profile = () => {
                 made the decision to pursue Web Development and have been
                 associated with it. Although I am still at the beginning of my
                 Web Development career, I am constantly learning and exploring
-                different kinds of web technologies. <br /> When I'm not writing
-                code and learning new technologies, I prefer to play online
-                games. I also sing and play guitar🎶🎸.
+                different kinds of web technologies. <br /> When I&apos;m not
+                writing code and learning new technologies, I prefer to play
+                online games. I also sing and play guitar🎶🎸.
               </p>
             </div>
             <div className="img-container relative hidden">
