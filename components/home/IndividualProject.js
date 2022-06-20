@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import { project } from "../../data/project";
+import Head from "next/head";
 
 const IndividualProject = ({ projectData }) => {
   // style
@@ -11,9 +12,13 @@ const IndividualProject = ({ projectData }) => {
   };
   // console.log(projectData);
   const imgs = projectData.map((img) => img.imgs);
-  console.log(imgs);
+  // console.log(imgs);
   return (
     <section className="py-5">
+      <Head>
+        <title>John Patrick Resurreccion | Work</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="container md:m-auto md:w-[80%] lg:w-[800px] xl:w-[950px] ">
         {projectData.map((data) => {
           return (
