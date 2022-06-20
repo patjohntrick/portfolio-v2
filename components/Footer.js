@@ -34,8 +34,7 @@ const Footer = () => {
             <div className="flex gap-2 items-center text-indigo-700 break-words ">
               <MdEmail />
               <p className="text-black/90 text-sm  break-words ">
-                patrickjohn.resurreccion <span className="hidden"></span>
-                18@gmail.com
+                patrickjohn.resurreccion18@gmail.com
               </p>
             </div>
           </div>

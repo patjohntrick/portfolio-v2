@@ -3,10 +3,10 @@ import React from "react";
 const Hero = () => {
   // style
   const style = {
-    btn: "border-2 px-5 text-sm py-2 rounded font-medium transition-all cursor-pointer uppercase",
+    btn: "border-2 px-5 text-sm py-2 rounded font-medium transition-all cursor-pointer uppercase shadow-lg",
   };
   return (
-    <section className=" pt-[70px] h-[95vh] grid place-items-center bg-white xl:h-screen">
+    <section className=" h-[95vh] grid place-items-center bg-white xl:h-screen">
       <div className="container">
         <div className="text-container text-center lg:space-y-2">
           <p className=" text-black/80 font-medium text-sm ">

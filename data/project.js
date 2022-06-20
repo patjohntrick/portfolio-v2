@@ -94,7 +94,7 @@ const project = [
     description:
       "I saw this design from youtube and I recreate it and I add backend functionality to make it full stack web app.",
     longDescription:
-      "I saw this design from youtube and I recreate it and I add backend functionality to make it full stack web app. After I finished the Backend End Development and API's Certification from freeCodeCamp, this web app serve as implementation of what I learned. It took me 15 days to finished it because there's a lot of errors and confusions came during development.",
+      "I saw this design from youtube and I recreate it and I add backend functionality to make it full stack web app. After I finished the Backend End Development and API's Certification from freeCodeCamp, this web app served as implementation of what I learned. It took me 15 days to finished it because there's a lot of errors and confusions came during development.",
     imgs: [
       {
         img: "/fresh/pic1.png",

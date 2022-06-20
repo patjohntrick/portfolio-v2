@@ -1,7 +1,12 @@
 import React from "react";
+import ContactComponent from "../../components/contact/ContactComponent";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <section className=" pt-[30px]">
+      <ContactComponent />
+    </section>
+  );
 };
 
 export default Contact;

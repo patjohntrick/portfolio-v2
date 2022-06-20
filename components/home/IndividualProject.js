@@ -16,7 +16,7 @@ const IndividualProject = ({ projectData }) => {
   return (
     <section className="py-5">
       <Head>
-        <title>John Patrick Resurreccion | Work</title>
+        <title>Work | John Patrick Resurreccion</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="container md:m-auto md:w-[80%] lg:w-[800px] xl:w-[950px] ">

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className=" bg-theme ">
       <Head>
-        <title>John Patrick Resurreccion | Home</title>
+        <title>John Patrick Resurreccion | Front-End Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       {/* <Floating /> */}

@@ -30,7 +30,7 @@ const Id = ({ id }) => {
   }, []);
 
   return (
-    <section className=" pt-[70px]">
+    <section className=" pt-[60px]">
       <IndividualProject projectData={projectData} />
     </section>
   );

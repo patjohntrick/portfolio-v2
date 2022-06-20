@@ -16,21 +16,27 @@ const Navigation = () => {
     bar: "w-[25px] h-[2px] rounded-full bg-indigo-800",
   };
   return (
-    <nav className=" shadow fixed w-full bg-white/80 backdrop-blur h-[70px] flex items-center z-20 ">
+    <nav className=" fixed w-full bg-white/80 backdrop-blur h-[70px] flex items-center z-20 ">
       <div className="flex justify-between items-center w-[90%] m-auto md:w-[80%] lg:w-[800px] xl:w-[1100px]">
         <div className="logo-container ">
           <Link href="/">
-            <a className="font-black bg-indigo-700 text-white text-2xl px-4 text-theme rounded">
-              Pat
+            <a className="font-black text-indigo-700 text-4xl text-theme rounded">
+              PAT.
             </a>
           </Link>
         </div>
         <div className="nav-links desktop hidden md:block">
           <ul className="flex gap-6 text-indigo-700 font-medium">
-            <li className="underline underline-offset-4 decoration-pink-500 decoration-2">
-              Home
-            </li>
-            <li>Contact</li>
+            <Link href="/">
+              <a className="underline underline-offset-4 decoration-pink-500 decoration-2">
+                Home
+              </a>
+            </Link>
+            <Link href="/contact">
+              <a className="underline underline-offset-4 decoration-pink-500 decoration-2">
+                Contact
+              </a>
+            </Link>
           </ul>
         </div>
         <div
@@ -48,15 +54,27 @@ const Navigation = () => {
         }`}
       >
         <div
-          className="flex rotate-45 w-[25px] h-[25px] absolute top-[3%] left-[80%]"
+          className="flex rotate-45 w-[25px] h-[25px] absolute top-[4%] left-[80%] translate-y-[-4%]"
           onClick={handleNavBar}
         >
           <div className="w-[2px] h-[25px] rounded-full bg-zinc-800 left-[50%] translate-x-[-50%] absolute bg-white/90"></div>
           <div className="w-[2px] h-[25px] rounded-full bg-zinc-800 rotate-90 top-0 left-[50%] translate-x-[-50%] absolute bg-white/90"></div>
         </div>
-        <ul className="text-center text-white/90 space-y-4">
-          <li>Home</li>
-          <li>Contact</li>
+        <ul
+          className="text-center text-white/90 space-y-4"
+          onClick={handleNavBar}
+        >
+          <Link href="/">
+            <a className="underline underline-offset-4 decoration-pink-500 decoration-2">
+              Home
+            </a>
+          </Link>{" "}
+          <br /> <br />
+          <Link href="/contact">
+            <a className="underline underline-offset-4 decoration-pink-500 decoration-2">
+              Contact
+            </a>
+          </Link>
         </ul>
       </div>
     </nav>
