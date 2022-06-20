@@ -3,6 +3,7 @@ import Divider from "../../components/Divider";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
+import emailjs from "emailjs-com";
 
 const contact = () => {
   // style
@@ -17,6 +18,19 @@ const contact = () => {
     otherContact: "flex gap-2 items-center text-indigo-700",
     contactDetails: "text-black/90",
   };
+
+  // handleSubmit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_17as5dq",
+      "template_1xxq0re",
+      e.target,
+      "eMXTGwlI_oUoVbkOS"
+    );
+    e.target.reset();
+  };
+
   return (
     <div className="container pt-12 w-[90%] m-auto md:w-[70%] lg:w-[800px] xl:w-[950px] ">
       <header className="text-center space-y-2 mb-8">
@@ -38,7 +52,7 @@ const contact = () => {
             className="w-full object-cover"
           />
         </div>
-        <form action="" className={style.form}>
+        <form onSubmit={handleSubmit} className={style.form}>
           <div>
             <label htmlFor="name" className={style.label}>
               Name <span className={style.span}>*</span>
@@ -48,7 +62,7 @@ const contact = () => {
               type="text"
               id="name"
               name="name"
-              className={style.input}
+              className={`${style.input} capitalize`}
               required
             />
           </div>
