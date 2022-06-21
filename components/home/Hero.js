@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   // style
@@ -26,13 +27,21 @@ const Hero = () => {
           <p
             className={`${style.btn} border-indigo-700 bg-indigo-700 text-white shadow hover:shadow-lg hover:bg-indigo-800 hover:border-indigo-800 `}
           >
-            Contact
+            Contact Me
           </p>
-          <p
+          <Link href="/resume/John%20Patrick%20Resurreccion.pdf">
+            <a
+              className={`${style.btn} border-indigo-700 text-indigo-700 hover:bg-indigo-50`}
+              target="_blank"
+            >
+              View Resume
+            </a>
+          </Link>
+          {/* <p
             className={`${style.btn} border-indigo-700 text-indigo-700 hover:bg-indigo-50`}
           >
             Resume
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
