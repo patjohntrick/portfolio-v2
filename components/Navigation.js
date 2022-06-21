@@ -40,7 +40,7 @@ const Navigation = () => {
           </ul>
         </div>
         <div
-          className="nav-bar mobile space-y-[4px] md:hidden "
+          className="nav-bar mobile space-y-[4px] md:hidden cursor-pointer "
           onClick={handleNavBar}
         >
           <div className={style.bar}></div>
@@ -54,7 +54,7 @@ const Navigation = () => {
         }`}
       >
         <div
-          className="flex rotate-45 w-[25px] h-[25px] absolute top-[4%] left-[80%] translate-y-[-4%]"
+          className="flex rotate-45 w-[25px] h-[25px] absolute top-[4%] left-[80%] translate-y-[-4%] cursor-pointer"
           onClick={handleNavBar}
         >
           <div className="w-[2px] h-[25px] rounded-full bg-zinc-800 left-[50%] translate-x-[-50%] absolute bg-white/90"></div>

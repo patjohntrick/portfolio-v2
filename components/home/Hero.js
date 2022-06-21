@@ -24,11 +24,18 @@ const Hero = () => {
           </p>
         </div>
         <div className="btn-container flex gap-2 justify-center mt-4">
-          <p
+          <Link href="/contact">
+            <a
+              className={`${style.btn} border-indigo-700 bg-indigo-700 text-white shadow hover:shadow-lg hover:bg-indigo-800 hover:border-indigo-800 `}
+            >
+              Contact Me
+            </a>
+          </Link>
+          {/* <p
             className={`${style.btn} border-indigo-700 bg-indigo-700 text-white shadow hover:shadow-lg hover:bg-indigo-800 hover:border-indigo-800 `}
           >
             Contact Me
-          </p>
+          </p> */}
           <Link href="/resume/John%20Patrick%20Resurreccion.pdf">
             <a
               className={`${style.btn} border-indigo-700 text-indigo-700 hover:bg-indigo-50`}
