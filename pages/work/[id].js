@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import IndividualProject from "../../components/home/IndividualProject";
-import { project } from "../../data/project";
+import React, { useEffect, useState } from 'react';
+import IndividualProject from '../../components/home/IndividualProject';
+import { project } from '../../data/project';
 
 export const getStaticPaths = () => {
   const paths = project.map((data) => {
@@ -30,7 +30,7 @@ const Id = ({ id }) => {
   }, []);
 
   return (
-    <section className=" pt-[60px]">
+    <section className=' pt-[60px]'>
       <IndividualProject projectData={projectData} />
     </section>
   );
